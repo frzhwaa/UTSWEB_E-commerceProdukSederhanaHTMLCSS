@@ -1,0 +1,580 @@
+/* biar bisa ngubah" format keseluruhan */
+:root{
+    --ungu: rgb(169, 91, 242);
+}
+
+/* memilih semua */
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+/* format html */
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+/* format section pada menu */
+section{
+    padding: 2rem 9%;
+}
+
+/* format class heading */
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgb(0, 2, 95);
+}
+
+.heading span{
+    color: var(--ungu);
+}
+
+/* format class btn */
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: black;
+    color: white;
+    padding: 1rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+/* kalo cusor ke tulisan biar ganti warna */
+.btn:hover{
+    background: var(--ungu);
+}
+
+/* format header */
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: white;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+}
+
+/* format logo dalam header */
+header .logo{
+    font-size: 3rem;
+    color:rgb(78, 153, 197);
+    font-weight: bolder;
+}
+
+/* format menu/class navbar */
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: black;
+}
+
+/* kalo cusor kemenu biar ganti warna */
+header .navbar a:hover{
+    color:var(--ungu)
+}
+
+/* format icon */
+header .icons a{
+    font-size: 2.5rem;
+    color: black;
+    margin-left: 1.5rem;
+}
+
+/* kalo cusor keicont biar ganti warna */
+header .icons a:hover{
+    color:var(--ungu)
+}
+
+/* biar checkbox nya tidak terlihat */
+header #toggler{
+    display: none;
+}
+
+/* format icon garis" */
+header .fa-bars{
+    font-size: 3rem;
+    color: black;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+/* format class home */
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url(../images/home\ bg.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* class content */
+.home .content{
+    max-width: 40rem;
+}
+
+/* format h3 */
+.home .content h3{
+    font-size: 5rem;
+    color: rgb(0, 2, 95)
+}
+
+/* format span pada class content */
+.home .content span{
+    font-size: 3rem;
+    color: var(--ungu);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+/* format p pada class content */
+.home .content p{
+    font-size: 1.5rem;
+    color: black;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+/* format class row */
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+/* format class video container */
+.about .row .video-container{
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+/* format video */
+.about .row .video-container video{
+    width: 100%;
+    border: 1.5rem solid white;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem black;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* format h3 pada class video container */
+.about .row .video-container h3{
+    position: absolute;
+    top:50%; transform: translateY(-50%);
+    font-size: 3rem;
+    background: white;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+/* format class content  */
+.about .row .content{
+    flex: 1 1 40rem;
+}
+
+/* format h3 pada class content */
+.about .row .content h3{
+    text-align: center;
+    font-size: 2.5rem;
+    background: rgb(99, 173, 234);
+}
+
+/* format p pada class content */
+.about .row .content p{
+    text-align: justify;
+    font-size: 1.5rem;
+    background: #b6eaff;
+    padding: 1.5rem;
+    padding-top: 1rem;
+    line-height: 1.3;
+}
+
+/* format class iconts-container */
+.iconts-container{
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* format class iconts pada class iconts-container */
+.iconts-container .iconts{
+    background: white;
+    border: 1rem solid black;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+
+/* format class iconts img */
+.iconts-container .iconts img{
+    height: 5rem;
+    margin-right: 2rem;
+}
+
+/* format h3 pada class iconts */
+.iconts-container .iconts h3{
+    color: black;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+/* format span pada class iconts */
+.iconts-container .iconts span{
+    color: black;
+    padding-bottom: .5rem;
+    font-size: 1.3rem;
+}
+
+/* format class box-container */
+.product .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+/* format class box */
+.product .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem black;
+    border-radius: .5rem;
+    border:.1rem solid black;
+    position: relative;
+}
+
+/* format class discount */
+.product .box-container .box .discount{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    padding: .7rem 1rem;
+    font-size: 2rem;
+    color: var(--ungu);
+    background: black;
+    z-index: 1;
+    border-radius: .5rem;
+}
+
+/* format class image */
+.product .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+/* format img pada class image */
+.product .box-container .box .image img{
+    height: 25rem;
+}
+
+/* format img pada class image */
+.product .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+/* format class iconts */
+.product .box-container .box .image .icons{
+    position: absolute;
+    bottom: -7rem; left: 0; right: 0;
+    display: flex;
+}
+
+.product .box-container .box:hover .image .icons{
+    bottom: 0;
+}
+
+.product .box-container .box .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background: var(--ungu);
+    color: white;
+}
+
+.product .box-container .box .image .icons .cart-btn{
+    border-left:.1rem;
+    border-right: .1rem solid black;
+    width: 100 px;
+}
+
+.product .box-container .box .image .icons a:hover{
+    background: black;
+}
+
+.product .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+
+.product .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: black;
+}
+
+.product .box-container .box .content .price{
+    font-size: 2.5rem;
+    color: var(--ungu);
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.product .box-container .box .content span{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.review .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem black;
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    position: relative;
+    border: .1rem solid black;
+}
+
+.review .box-container .box .fa-quote-right{
+    position: absolute;
+    bottom: 3rem; right: 3rem;
+    font-size: 6rem;
+    color: #eeee;
+}
+
+.review .box-container .box .stars i{
+    color: var(--ungu);
+    font-size: 2rem;
+}
+
+.review .box-container .box p{
+    color: black;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+}
+
+.review .box-container .box .user{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.review .box-container .box .user img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.review .box-container .box .user h3{
+    font-size: 2rem;
+    color: black;
+}
+
+.review .box-container .box .user span{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+}
+
+.contact .row form{
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem black;
+    border: .1rem solid black;
+    background: white;
+    border-radius: .5rem;
+}
+
+.contact .row .image{
+    flex: 1 1 40rem;
+}
+
+.contact .row .image img{
+    width: 100%;
+}
+
+.contact .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: black;
+    text-transform: none;
+    border: .3rem solid black;
+    border-radius: .5rem;
+    margin:.7rem 0;
+    width: 100%;
+}
+
+.contact .row form .box:focus{
+    border-color: var(--ungu);
+}
+
+.contact .row form textarea{
+    height: 15rem;
+    resize:none;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-container .box{
+    flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3{
+    color: black;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+
+}
+
+.footer .box-container .box a{
+    display: block;
+    color: black;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover{
+    color: var(--ungu);
+    text-decoration: underline;
+}
+
+.footer .box-container .box img{
+    margin-top: 1rem;
+}
+
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: black;
+    border-top: 1rem solid black;
+}
+
+.footer .credit span{
+    color: var(--ungu);
+}
+
+/* media queries mengatur aturan CSS yang akan aktif hanya ketika kondisi tertentu terpenuhi. */
+@media (max-width: 991px){
+
+    html{
+        font-size: 55%;
+    }
+    
+    header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+}
+
+@media (max-width: 768px){
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: white;
+        border-top: 1rem solid black;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: white;
+        border: .1rem solid black;
+        display: block;
+    }
+
+    .home .content h3{
+        font-size: 5rem;
+    }
+
+    .home .content span{
+        font-size: 2.5rem;
+    }
+
+    .iconts-container .iconts h3{
+        font-size: 2rem;
+    }
+    
+    .iconts-container .iconts span{
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+
+}
